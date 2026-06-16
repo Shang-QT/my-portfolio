@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lloyd Justin Felecilda | Computer Science Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lloyd Justin Felecilda's portfolio showcasing skills, experiences, and projects as a Computer Science student at Toronto Metropolitan University.">
+    <meta name="keywords" content="Computer Science, Portfolio, Lloyd Justin Felecilda, Projects, Experience, Education">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css">
+    <!-- Change to this -->
+    <link rel="stylesheet" href="./lloydWebsiteCSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            emailjs.init("KTZYiBH7VkXlcPKhy");
+        });
+    </script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <nav class="nav-container" role="navigation" aria-label="Main Navigation">
+        <!-- Logo/Brand -->
+        <div class="nav-brand" onclick="window.location.href='#'">
+            <span class="logo-text">LF</span>
+        </div>
+    
+        <!-- Main Navigation Tabs -->
+        <div class="nav-tabs" role="tablist">
+            <!-- About Tab -->
+            <div class="nav-tab active" 
+                 role="tab" 
+                 aria-selected="true" 
+                 data-tab="about"
+                 tabindex="0">
+                <i class="fas fa-user" aria-hidden="true"></i>
+                <span>About</span>
+            </div>
+    
+            <!-- Experience Tab -->
+            <div class="nav-tab" 
+                 role="tab" 
+                 aria-selected="false" 
+                 data-tab="experience"
+                 tabindex="0">
+                <i class="fas fa-briefcase" aria-hidden="true"></i>
+                <span>Experience</span>
+            </div>
+    
+            <!-- Resume Tab -->
+            <div class="nav-tab" 
+                 role="tab" 
+                 aria-selected="false" 
+                 data-tab="resume"
+                 tabindex="0">
+                <i class="fas fa-file-alt" aria-hidden="true"></i>
+                <span>Resume</span>
+            </div>
+    
+            <!-- Contact Tab -->
+            <div class="nav-tab" 
+                 role="tab" 
+                 aria-selected="false" 
+                 data-tab="contact"
+                 tabindex="0">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <span>Contact</span>
+            </div>
+        </div>
+    
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" 
+                aria-label="Toggle dark theme" 
+                title="Toggle dark mode">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+    </nav>
+    
+    <!-- Status Message Container -->
+    <div id="status-message" 
+         class="status-message" 
+         role="alert" 
+         aria-live="polite">
+    </div>
+    
+    <!-- Mobile Menu Overlay (for mobile navigation) -->
+    <div class="mobile-menu-overlay" aria-hidden="true"></div>
+
+    <main>
+        <!-- About Section -->
+        <div id="about" class="tab-content active" role="tabpanel">
+            <header class="hero">
+                <div class="hero-content">
+                    <h1 class="glitch" data-text="Lloyd Justin Felecilda">Lloyd Justin Felecilda</h1>
+                    <h2 class="subtitle">University of Mindanao</h2>
+                    <h3 class="degree-title">Bachelor of Science in Computer Science</h3>
+                    <div class="typewriter-container">
+                        <span class="typewriter"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <div class="hero-badges">
+                        <span class="badge">🎓 Computer Science</span>
+                        <span class="badge">💻 Developer</span>
+                        <span class="badge">🚀 Innovator</span>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+            </header>
+
+            <div class="container">
+                <section class="about-section card fade-in">
+                    <h2>About Me</h2>
+                    <p class="lead">I'm Lloyd Justin Felecilda, a 3rd year Bachelor of Science in Computer Science student at the University of Mindanao. I enjoy building web applications and exploring new technologies. I have hands-on experience with PHP, Laravel, and Java, and I'm passionate about creating solutions that are both functional and user-friendly. I'm always looking for opportunities to grow as a developer and contribute to meaningful projects.</p>
+                    <div class="about-grid">
+                        <div class="about-item">
+                            <i class="fas fa-code"></i>
+                            <h3>Developer</h3>
+                            <p>Creating elegant solutions through code</p>
+                        </div>
+                        <div class="about-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Problem Solver</h3>
+                            <p>Turning complex challenges into simple solutions</p>
+                        </div>
+                        <div class="about-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Innovator</h3>
+                            <p>Always learning and exploring new technologies</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="education-section card fade-in">
+                    <h2>Education</h2>
+                    <div class="education-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>University of Mindanao</h3>
+                                <p class="timeline-date">2023 - 2027 (Expected)</p>
+                                <p>BS in Computer Science</p>
+                                <div class="coursework">
+                                    <h4>Notable Coursework:</h4>
+                                    <div class="badge-container">
+                                        <span class="badge">Machine Learning</span>
+                                        <span class="badge">Web Development</span>
+                                        <span class="badge">Software Development</span>
+                                        <span class="badge">AI Fundamentals</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projects-section card fade-in">
+                    <h2>Featured Projects</h2>
+                    <div class="project-grid">
+                        <article class="project-card fade-in">
+                            <div class="project-content">
+                                <h3>Abstrack Fitness Gym Management System</h3>
+                                <p>
+                                    A full-featured gym management system that handles member registration, attendance tracking, and membership plans. Built with Laravel and deployed on Render.
+                                </p>
+                                <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
+                                    <a href="https://github.com/Siege365/AbsTrackFitnessGymManagementSystem" target="_blank" class="btn-view">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                    <a href="https://abstrackgym.onrender.com" target="_blank" class="btn-view">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                                <div class="badge-container">
+                                    <span class="badge">Laravel</span>
+                                    <span class="badge">PHP</span>
+                                    <span class="badge">Bootstrap</span>
+                                </div>
+                                <div>
+                                    <p> 
+                                        Email: admin@abstrack.com | Password: password    
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card fade-in">
+                            <div class="project-content">
+                                <h3>Fake News Detector Using DistilBERT</h3>
+                                <p>
+                                    A machine learning web app that detects fake news articles using the DistilBERT transformer model. Users can input any news text or image and receive a real-time credibility prediction.
+                                </p>
+                                <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
+                                    <a href="https://github.com/Shang-QT/Fake-News-DistilBERT" target="_blank" class="btn-view">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                    <a href="https://fake-news-distilbert-detector.streamlit.app/" target="_blank" class="btn-view">
+                                        <i class="fas fa-external-link-alt"></i> Live App
+                                    </a>
+                                </div>
+                                <div class="badge-container">
+                                    <span class="badge">Machine Learning</span>
+                                    <span class="badge">Python</span>
+                                    <span class="badge">Streamlit</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card fade-in">
+                            <div class="project-content">
+                                <h3>Breast Cancer Classifier</h3>
+                                <p>
+                                    A machine learning web app that evaluates tumor characteristics to predict whether a breast cancer tumor is benign or malignant.
+                                </p>
+                                <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
+                                    <a href="https://colab.research.google.com/drive/1ngidKJY7hoCFt-ftJeZS5tt85snXZ8yA?usp=sharing" target="_blank" class="btn-view">
+                                        <i class="fas fa-file-code"></i> Google Colab
+                                    </a>
+                                    <a href="https://breast-cancer-classifyy.streamlit.app/" target="_blank" class="btn-view">
+                                        <i class="fas fa-external-link-alt"></i> Live App
+                                    </a>
+                                </div>
+                                <div class="badge-container">
+                                    <span class="badge">Machine Learning</span>
+                                    <span class="badge">Python</span>
+                                    <span class="badge">Streamlit</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card fade-in">
+                            <div class="project-content">
+                                <h3>Vitapets Clinic</h3>
+                                <p>
+                                    A veterinary clinic management system that streamlines appointment scheduling, patient records, and pet owner information for clinic staff.
+                                </p>
+                                <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
+                                    <a href="https://github.com/Shang-QT/Vitapets" target="_blank" class="btn-view">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                    <a href="https://vitapetsanimalclinic.great-site.net/" target="_blank" class="btn-view">
+                                        <i class="fas fa-external-link-alt"></i> Live App
+                                    </a>
+                                </div>
+                                <div class="badge-container">
+                                    <span class="badge">HTML</span>
+                                    <span class="badge">CSS</span>
+                                    <span class="badge">JavaScript</span>
+                                    <span class="badge">PHP</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card fade-in">
+                            <div class="project-content">
+                                <h3>Foodtruck Ordering System</h3>
+                                <p>
+                                    An online food ordering system for a food truck business, featuring a menu display, cart management, and order processing flow.
+                                </p>
+                                <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
+                                    <a href="https://github.com/Siege365/FoodTruckCompile" target="_blank" class="btn-view">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card fade-in">
+                            <div class="project-content">
+                                <h3>ANGA University Portal</h3>
+                                <p>
+                                    A university portal system built as a Data Structures and Algorithms final project, implementing efficient data management for student records and academic information.
+                                </p>
+                                <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
+                                    <a href="https://github.com/elbse/DSAFinalProject" target="_blank" class="btn-view">
+                                        <i class="fab fa-github"></i> Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div id="experience" class="tab-content" role="tabpanel">
+            <div class="container">
+                <section class="experience-section">
+                    <h2>Experience</h2>
+                    <div class="experience-timeline">
+                        <article class="experience-card fade-in">
+                            <div class="experience-header">
+                                <div class="experience-title">
+                                    <h3>Computer Science Student</h3>
+                                </div>
+                                <span class="experience-date">University of Mindanao · August 2023 - Present</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Developed a fitness gym management web application as part of coursework</li>
+                                <li>Developed a veterinary clinic management web application as part of coursework</li>
+                                <li>Built a Fake News Detector using DistilBERT (Machine Learning)</li>
+                                <li>Built a machine learning web app that classifies breast cancer (Machine Learning)</li>
+                                <li>Acquired certifications in IT Database, Network Security and Cybersecurity through Certiport</li>
+                                <li>Achieved positive feedback from Professors and Clients regarding the products developed</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="skills-section">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h3>PHP</h3>
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">
+                                <i class="fab fa-laravel"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h3>Laravel</h3>
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h3>HTML</h3>
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h3>Java</h3>
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h3>CSS</h3>
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h3>SQL</h3>
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card fade-in">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-content">
+                                <h3>Python</h3>
+                                <div class="progress-bar">
+                                    <div class="progress" data-progress="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Resume Section -->
+        <div id="resume" class="tab-content" role="tabpanel">
+            <div class="container">
+                <div class="resume-wrapper card">
+                    <iframe id="pdfIframe" src="FELECILDA_RESUME-2.pdf" title="Resume"></iframe>
+                    <a href="FELECILDA_RESUME-2.pdf" download class="btn-download">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="tab-content" role="tabpanel">
+            <div class="container">
+                <section class="contact-section">
+                    <h2>Get In Touch</h2>
+                    <div class="contact-grid">
+                       <!-- Replace your current contact-info card with this -->
+                        <div class="contact-info card fade-in">
+                            <h3>Contact Information</h3>
+                            <div class="contact-items">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email me at</span>
+                                    <a href="mailto:felecilda@gmail.com">felecilda@gmail.com</a>
+                                </div>
+
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Call me at</span>
+                                    <a>+639631219032</a>
+                                </div>
+        
+        <!-- LinkedIn with profile preview -->
+                                <div class="contact-item">
+                                    <i class="fab fa-linkedin"></i>
+                                    <a href="https://www.linkedin.com/in/lloyd-justin-felecilda" 
+                                    target="_blank" 
+                                    class="profile-preview-link">                                       
+                                        <span>linkedin.com/in/lloyd-justin-felecilda</span>
+                                    </a>
+                                </div>
+        
+        <!-- GitHub with profile preview -->
+                                <div class="contact-item">
+                                    <i class="fab fa-github"></i>
+                                    <a href="https://github.com/Shang-QT" 
+                                    target="_blank"
+                                    class="profile-preview-link">
+                                        <span>github.com/Shang-QT</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="social-links fade-in">
+                    <a href="https://github.com/Shang-QT" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lloyd-justin-felecilda/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="trademark">
+        &copy; <script>document.write(new Date().getFullYear())</script>  Lloyd Justin Felecilda. All rights reserved.
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Vanta.js Birds
+    const vantaEffect = VANTA.BIRDS({
+        el: "#particles-js",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: document.documentElement.classList.contains('dark-theme') ? 0x111827 : 0xffffff,
+        color1: document.documentElement.classList.contains('dark-theme') ? 0x8b5cf6 : 0x1a1a1a,
+        color2: document.documentElement.classList.contains('dark-theme') ? 0x7c3aed : 0xcccccc,
+        colorMode: "lerpGradient",
+        birdSize: 1.50,
+        wingSpan: 30.00,
+        separation: 50.00,
+        alignment: 20.00,
+        cohesion: 20.00,
+        quantity: 3.00
+    });
+
+    // Loading screen
+    const loadingScreen = document.querySelector('.loading-screen');
+    if (loadingScreen) {
+        loadingScreen.style.opacity = '1';
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+        }, 500);
+    }
+
+    // Tab switching functionality
+    const tabs = document.querySelectorAll('.nav-tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    function switchTab(targetTab) {
+        const targetId = targetTab.dataset.tab;
+        
+        // Remove active class from all tabs and contents
+        tabs.forEach(t => t.classList.remove('active'));
+        tabContents.forEach(content => {
+            content.classList.remove('active');
+            content.style.display = 'none';
+        });
+
+        // Add active class to clicked tab
+        targetTab.classList.add('active');
+
+        // Show corresponding content
+        const targetContent = document.getElementById(targetId);
+        if (targetContent) {
+            targetContent.style.display = 'block';
+            setTimeout(() => targetContent.classList.add('active'), 50);
+
+            // Reset and trigger animations
+            const fadeElements = targetContent.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => {
+                el.classList.remove('visible');
+                void el.offsetWidth; // Trigger reflow
+                el.classList.add('visible');
+            });
+
+            // Animate progress bars if in experience tab
+            if (targetId === 'experience') {
+                animateProgressBars();
+            }
+        }
+    }
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => switchTab(tab));
+    });
+
+    // Initialize with default tab
+    const defaultTab = document.querySelector('.nav-tab.active');
+    if (defaultTab) {
+        switchTab(defaultTab);
+    }
+
+    // Typewriter effect
+    const typewriterElement = document.querySelector('.typewriter');
+    const phrases = [
+        'Computer Science Student',
+        'Web Developer',
+        'Problem Solver',
+        'Tech Enthusiast'
+    ];
+    let phraseIndex = 0;
+
+    function typeWriter(element, text, speed = 100) {
+        if (!element) return;
+        
+        let i = 0;
+        element.textContent = '';
+        
+        function type() {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            }
+        }
+        
+        type();
+    }
+
+    function typeNextPhrase() {
+        if (!typewriterElement) return;
+        
+        typeWriter(typewriterElement, phrases[phraseIndex], 100);
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        setTimeout(typeNextPhrase, 4000);
+    }
+
+    typeNextPhrase();
+
+    // Theme toggle
+    const themeToggle = document.querySelector('.theme-toggle');
+    const root = document.documentElement;
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            root.classList.toggle('dark-theme');
+            
+            // Update Vanta background colors
+            if (vantaEffect) {
+                if (root.classList.contains('dark-theme')) {
+                    vantaEffect.setOptions({
+                        backgroundColor: 0x111827,
+                        color1: 0x8b5cf6,
+                        color2: 0x7c3aed
+                    });
+                } else {
+                    vantaEffect.setOptions({
+                        backgroundColor: 0xffffff,
+                        color1: 0x1a1a1a,
+                        color2: 0xcccccc
+                    });
+                }
+            }
+
+            const icon = themeToggle.querySelector('i');
+            if (icon) {
+                if (root.classList.contains('dark-theme')) {
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                } else {
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                }
+            }
+        });
+    }
+
+    // Progress bar animation
+    function animateProgressBars() {
+        const progressBars = document.querySelectorAll('.progress');
+        progressBars.forEach(bar => {
+            const progress = bar.dataset.progress;
+            bar.style.width = '0%';
+            setTimeout(() => {
+                bar.style.width = `${progress}%`;
+            }, 200);
+        });
+    }
+
+    // Contact form submission
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const statusMessage = document.getElementById('status-message');
+            
+            try {
+                const result = await emailjs.sendForm('service_1y58kbv', 'template_gg99nfg', contactForm);
+                console.log('Email sent:', result.status, result.text);
+                
+                if (statusMessage) {
+                    statusMessage.textContent = 'Message sent successfully!';
+                    statusMessage.classList.add('success');
+                    statusMessage.style.display = 'block';
+                }
+                
+                contactForm.reset();
+                
+                setTimeout(() => {
+                    if (statusMessage) {
+                        statusMessage.style.display = 'none';
+                        statusMessage.classList.remove('success');
+                    }
+                }, 5000);
+            } catch (error) {
+                console.error('Error sending email:', error);
+                
+                if (statusMessage) {
+                    statusMessage.textContent = 'Error sending message. Please try again later.';
+                    statusMessage.classList.add('error');
+                    statusMessage.style.display = 'block';
+                    
+                    setTimeout(() => {
+                        statusMessage.style.display = 'none';
+                        statusMessage.classList.remove('error');
+                    }, 5000);
+                }
+            }
+        });
+    }
+
+    // Intersection Observer for fade-in animations
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(element => observer.observe(element));
+
+    // Initialize GSAP ScrollTrigger
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate elements on scroll
+        gsap.utils.toArray('.fade-in').forEach(element => {
+            gsap.from(element, {
+                y: 50,
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        });
+    }
+});
+       
+    </script>
+</body>
+</html>
